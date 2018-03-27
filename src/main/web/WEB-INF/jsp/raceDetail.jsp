@@ -316,7 +316,11 @@
                 var msg = data.msg;
                 alert(msg);
                 $("#addApply").modal("hide");
-                location.href = "${pageContext.request.contextPath}/alipay/toPay?applyCode="+applyCode;
+                if(msg=="该用户已经报名,无法重复报名"){
+                    location.href = location.href;
+                }else{
+                    location.href = "${pageContext.request.contextPath}/alipay/toPay?applyCode="+applyCode;
+                }
 
             });
         })

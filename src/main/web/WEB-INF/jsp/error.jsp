@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Administrator
+  Date: 2018/3/26 0026
+  Time: 下午 1:44
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <%@include file="basic.jsp"%>
@@ -6,9 +13,9 @@
 </head>
 <body>
 <div>
-<center><img src="/statics/images/error/error.jpg"  style="" <%--onload="AutoResizeImage(4000,0,this)"--%> alt="time">
+    <img src="/statics/images/error/error.jpg"  style="" <%--onload="AutoResizeImage(4000,0,this)"--%> alt="time">
     <div><a href="${pageContext.request.contextPath}/main/queryAllMain">返回首页</a></div>
-</center>
+
 </div>
 </body>
 <script type="text/javascript">

@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -31,8 +30,7 @@ public class AlipayController {
 
     /**
      * 用来接收informationId 的方法,在点击支付的时候传过来的值,用于修改信息里面的状态使用的
-     * @param informationId
-     * @param session
+     * @param
      * @return
      */
 

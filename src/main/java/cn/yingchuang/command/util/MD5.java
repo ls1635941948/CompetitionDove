@@ -27,8 +27,10 @@ public class MD5 {
 
     public static void main(String[] args) throws Exception {
         MD5 md5 = new MD5();
-        String ing = md5.getMD5("445");
-        System.out.println(ing);
+        String ing = md5.getMD5("qiangge728111111111111111111111111111111111111111");
+        String ing1 = md5.getMD5("qwww");
+        System.out.println(ing.length());
+        System.out.println(ing1.length());
     }
 }
 

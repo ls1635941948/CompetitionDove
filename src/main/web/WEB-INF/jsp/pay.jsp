@@ -214,7 +214,7 @@ if(request.getParameter("WIDout_trade_no")!=null){
         <h1>支付宝手机网站支付接口快速通道</h1>
 </header>
 <div id="main">
-        <form name=alipayment action='' method=post >
+        <form name=alipayment action='' method=get >
             <div id="body" style="clear:left">
                 <dl class="content">
                     <dt>商户订单号：</dt>
@@ -268,8 +268,8 @@ if(request.getParameter("WIDout_trade_no")!=null){
 		sNow += String(vNow.getSeconds());
 		sNow += String(vNow.getMilliseconds());*/
         var applyCode = "${applyCode}";
-		document.getElementById("WIDout_trade_no").value =  applyCode;
-		document.getElementById("WIDsubject").value = "Alipay";
+        document.getElementById("WIDout_trade_no").value=applyCode;
+		document.getElementById("WIDsubject").value = "alipay赛事信息";
 		document.getElementById("WIDtotal_amount").value = "100.00";
         document.getElementById("WIDbody").value = "赛事信息报名费";
 	}
